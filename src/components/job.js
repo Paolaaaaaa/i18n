@@ -9,7 +9,7 @@ const Job = (props) => {
       <th scope="row">{props.offer.id}</th>
       <td>{props.offer.name}</td>
       <td>{props.offer.company}</td>
-      <td>{props.offer.salary} Million</td>
+      <td>{props.offer.salary} {props.offer.salary>1?<p><FormattedMessage id="Millions"/></p>: <p><FormattedMessage id="Million"/></p>}</td>
       <td>{props.offer.city}</td>
 
 

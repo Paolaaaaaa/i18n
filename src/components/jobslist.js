@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Job from "./job";
 import { FormattedMessage } from "react-intl";
-const JobsList = () => {
+const JobsList = (props) => {
   const [offers] = useState([
     {
       id: "0001",
@@ -41,25 +41,25 @@ const JobsList = () => {
         <tr>
 
 
-        <th scope="col">#</th>
+        <th scope="col" style={{ backgroundColor: props.color , color: props.textC }}>#</th>
 
         
-      <th scope="col">
+        <th scope="col" style={{ backgroundColor: props.color, color: props.textC }}>
         <FormattedMessage id="Nombre del cargo" />
       </th>
-      <th scope="col">
+      <th scope="col" style={{ backgroundColor: props.color, color: props.textC }}>
         <FormattedMessage id="Empresa" />
       </th>
-      <th scope="col">
+      <th scope="col" style={{ backgroundColor: props.color, color: props.textC }}>
         <FormattedMessage id="Salario" />
       </th>
-      <th scope="col">
+      <th scope="col" style={{ backgroundColor: props.color, color: props.textC }}>
         <FormattedMessage id="Ciudad" />
       </th>
-      <th scope="col">
+      <th scope="col" style={{ backgroundColor: props.color, color: props.textC }}>
         <FormattedMessage id="Fecha de publicación" />
       </th>
-      <th scope="col">
+      <th scope="col" style={{ backgroundColor: props.color, color: props.textC }}>
         <FormattedMessage id="No. de visitas" />
       </th>
     </tr>

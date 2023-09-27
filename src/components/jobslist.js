@@ -51,7 +51,7 @@ const JobsList = (props) => {
         <FormattedMessage id="Empresa" />
       </th>
       <th scope="col" style={{ backgroundColor: props.color, color: props.textC }}>
-        <FormattedMessage id="Salario" />
+        <FormattedMessage id="Salario" /> 
       </th>
       <th scope="col" style={{ backgroundColor: props.color, color: props.textC }}>
         <FormattedMessage id="Ciudad" />
